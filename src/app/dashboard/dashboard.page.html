@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar id="barra1">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title id="sena">SENA</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-toolbar id="barra2">
+    <ion-button id="boton1">FORMACIÓN</ion-button>
+    <ion-button id="boton2">CORDINACIÓN</ion-button>
+    <ion-button id="boton3">NOVEDADES</ion-button>
+    <br>
+    <br>
+    <ion-title id="Noticias">Noticias</ion-title>
+    <br>
+  </ion-toolbar>
+
+  <ion-content>
+
+  <ion-card *ngFor="let noticia of noticias; let i = index" (click)="verDetalleNoticia(i)">
+    <ion-card-header>
+      <ion-img [src]="noticia.url_imag"></ion-img>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-card-title id="title">{{ noticia.title }}</ion-card-title>
+      {{ noticia.text_small }}
+    </ion-card-content>
+  </ion-card>
+
+  <ion-toolbar id="final">
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button>
+          <ion-icon class="fin" name="logo-whatsapp"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button>
+          <ion-icon class="fin" name="logo-facebook"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button>
+          <ion-icon class="fin" name="logo-twitter"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button>
+          <ion-icon class="fin" name="logo-instagram"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button>
+          <ion-icon class="fin" name="logo-youtube"></ion-icon>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-content>

@@ -1,0 +1,25 @@
+ion-toolbar {
+  --background: rgb(61, 152, 249);
+  color: black;
+}
+
+ion-content {
+  --background: white;
+  color: black;
+}
+
+ion-title{
+  margin-left: center;
+  font-size: 30px;
+  filter:drop-shadow(0 4px 2px green)
+}
+ion-item{
+  --background:white;
+}
+ion-icon{
+  color:green;
+}
+#texto{
+  color:black;
+  font-weight: bold;
+}

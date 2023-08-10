@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">
+        <ion-icon class="ini" name="arrow-undo-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>{{ noticia.title }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-img [src]="noticia.font_noticia"></ion-img>
+    </ion-card-header>
+    <ion-card-content>
+    <ion-toolbar class="sub">
+      <span slot="start">Noticias SENA</span><span slot="end">09 agosto de 2023</span>
+    </ion-toolbar>
+      {{ noticia.text_long }}
+    </ion-card-content>
+  </ion-card>
+
+  <ion-toolbar id="final">
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button>
+          <ion-icon class="fin" name="logo-whatsapp"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button>
+          <ion-icon class="fin" name="logo-facebook"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button>
+          <ion-icon class="fin" name="logo-twitter"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button>
+          <ion-icon class="fin" name="logo-instagram"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button>
+          <ion-icon class="fin" name="logo-youtube"></ion-icon>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-content>

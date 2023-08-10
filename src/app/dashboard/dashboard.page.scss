@@ -1,0 +1,108 @@
+#barra1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  --background: rgb(61, 152, 249);
+  color: black;
+  box-shadow: 0 2px 8px black;
+}
+#barra2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  --background: rgb(61, 152, 249);
+  align-items: center;
+  padding: 2px;
+  color: black;
+  box-shadow: 0 2px 8px black;
+}
+
+#Noticias {
+  margin-top:30px;
+  color: black;
+  font-size: 20px;
+  filter:drop-shadow(0 4px 2px green)
+
+}
+ion-title {
+  color: black;
+}
+
+ion-menu-button {
+  color: black;
+  filter:drop-shadow(2px 2px 0px green)
+}
+ion-content{
+  --background:white;
+}
+#sena{
+  margin-left: center;
+  font-size: 30px;
+  filter:drop-shadow(0 4px 2px green)
+}
+
+ion-img{
+  justify-content: left;
+  height: auto;
+  width: 150px;
+  box-shadow: 2px 4px 2px black;
+}
+
+ion-card {
+  background: rgb(61, 152, 249);
+  color: black;
+  box-shadow: 2px 4px 4px black;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  border-radius: 30px;
+}
+ion-card-header {
+  margin-bottom: 10px;
+}
+ion-card-content {
+  flex: 1;
+}
+
+#title {
+  margin-top: 10px;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+}
+#boton1{
+  font-size: 13px;
+  margin-left: 10px;
+  font-weight: bold;
+  --background:rgba(0, 0, 0, 0.599);
+  margin-top: 20px;
+}
+#boton2{
+  font-size: 13px;
+  margin-left: 3px;
+  font-weight: bold;
+  --background:rgba(0, 0, 0, 0.599);
+  margin-top: 20px;
+}
+#boton3 {
+  font-size: 13px;
+  margin-right: 10px;
+  font-weight: bold;
+  --background:rgba(0, 0, 0, 0.599);
+  margin-top: 20px;
+}
+ion-tab-bar{
+  --background: rgb(61, 152, 249);
+  display: flex;
+  justify-content: space-around;
+}
+.fin{
+  font-size: 20px;
+  color:black;
+}
+
+
